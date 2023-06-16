@@ -1,7 +1,7 @@
 [de APP_INFO
   ("name"      "picolisp-sqlite")
-  ("version"   "0.1.0")
-  ("summary"   "SQLite3 interface written in PicoLisp")
+  ("version"   "0.2.0")
+  ("summary"   "SQLite 3 interface written in PicoLisp")
   ("source"    "https://github.com/aw/picolisp-sqlite")
   ("author"    "Alexander Williams")
   ("license"   "MIT")
