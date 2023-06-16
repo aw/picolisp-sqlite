@@ -1,0 +1,18 @@
+PRAGMA journal_mode = wal;
+PRAGMA foreign_keys=OFF;
+
+BEGIN TRANSACTION;
+
+CREATE TABLE IF NOT EXISTS users (
+  username TEXT UNIQUE PRIMARY KEY NOT NULL,
+  user_id INTEGER UNIQUE NOT NULL,
+  age INTEGER NOT NULL
+);
+
+CREATE INDEX user_ids ON users (user_id);
+
+INSERT INTO users (username, user_id, age) VALUES ('alice', 1, 21);
+INSERT INTO users (username, user_id, age) VALUES ('bob', 2, 22);
+INSERT INTO users (username, user_id, age) VALUES ('charlie', 3, 23);
+
+COMMIT;
